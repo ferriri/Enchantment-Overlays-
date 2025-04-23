@@ -1,1 +1,1 @@
-Source code for resource pace called Enchantment Overlays!
+Source code for resource pack called Enchantment Overlays!

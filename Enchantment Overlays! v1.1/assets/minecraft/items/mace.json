@@ -1,0 +1,147 @@
+{
+    "model": {
+      "type": "minecraft:composite",
+      "models": [
+        {
+          "type": "minecraft:model",
+          "model": "minecraft:item/mace"
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:breach"
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/breachmace"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:density"
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/densitymace"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:unbreaking"
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/unbreakingmace"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:fire_aspect"
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/fireaspectmace"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:smite"
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/smitemace"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:wind_burst"
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/windburstmace"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:bane_of_arthropods"
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/arthropodsmace"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:mending"
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/mendingmace"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          }
+        }
+      ]
+    }
+  }

@@ -1,0 +1,154 @@
+{
+    "model": {
+      "type": "minecraft:composite",
+      "models": [
+        {
+          "type": "minecraft:model",
+          "model": "minecraft:item/stone_axe"
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:sharpness"
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/sharpnessaxe"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/arthropodsaxe"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          },
+          "": "minecraft:condition",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:bane_of_arthropods"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/efficiencyaxe"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          },
+          "": "minecraft:condition",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:efficiency"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/fortuneaxe"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          },
+          "": "minecraft:condition",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:fortune"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/silktouchaxe"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          },
+          "": "minecraft:condition",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:silk_touch"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/mendingaxe"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          },
+          "": "minecraft:condition",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:mending"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/unbreakingaxe"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          },
+          "": "minecraft:condition",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:unbreaking"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/smiteaxe"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          },
+          "": "minecraft:condition",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:smite"
+            }
+          ]
+        }
+      ]
+    }
+  }

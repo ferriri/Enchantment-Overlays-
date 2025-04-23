@@ -1,0 +1,96 @@
+{
+    "model": {
+      "type": "minecraft:composite",
+      "models": [
+        {
+          "type": "minecraft:model",
+          "model": "minecraft:item/wooden_hoe"
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:unbreaking"
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/unbreakinghoe"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:mending"
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/mendinghoe"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:silk_touch"
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/silktouchhoe"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:efficiency"
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/efficiencyhoe"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:fortune"
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/fortunehoe"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          }
+        }
+      ]
+    }
+  }

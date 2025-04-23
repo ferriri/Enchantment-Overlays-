@@ -1,0 +1,160 @@
+{
+    "model": {
+      "type": "minecraft:condition",
+      "property": "minecraft:fishing_rod/cast",
+      "on_true": {
+        "type": "minecraft:composite",
+        "models": [
+          {
+            "type": "minecraft:model",
+            "model": "minecraft:item/fishing_rod_cast"
+          },
+          {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:enchantments",
+            "value": [
+              {
+                "enchantments": "minecraft:lure"
+              }
+            ],
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/lurefishcast"
+            },
+            "on_false": {
+              "type": "minecraft:empty"
+            }
+          },
+          {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:enchantments",
+            "value": [
+              {
+                "enchantments": "minecraft:luck_of_the_sea"
+              }
+            ],
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/luckoftheseafishcast"
+            },
+            "on_false": {
+              "type": "minecraft:empty"
+            }
+          },
+          {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:enchantments",
+            "value": [
+              {
+                "enchantments": "minecraft:unbreaking"
+              }
+            ],
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/unbreakingfishcast"
+            },
+            "on_false": {
+              "type": "minecraft:empty"
+            }
+          },
+          {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:enchantments",
+            "value": [
+              {
+                "enchantments": "minecraft:mending"
+              }
+            ],
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/mendingfishcast"
+            },
+            "on_false": {
+              "type": "minecraft:empty"
+            }
+          }
+        ]
+      },
+      "on_false": {
+        "type": "minecraft:composite",
+        "models": [
+          {
+            "type": "minecraft:model",
+            "model": "minecraft:item/fishing_rod"
+          },
+          {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:enchantments",
+            "value": [
+              {
+                "enchantments": "minecraft:lure"
+              }
+            ],
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/lurefish"
+            },
+            "on_false": {
+              "type": "minecraft:empty"
+            }
+          },
+          {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:enchantments",
+            "value": [
+              {
+                "enchantments": "minecraft:luck_of_the_sea"
+              }
+            ],
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/luckoftheseafish"
+            },
+            "on_false": {
+              "type": "minecraft:empty"
+            }
+          },
+          {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:enchantments",
+            "value": [
+              {
+                "enchantments": "minecraft:unbreaking"
+              }
+            ],
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/unbreakingfish"
+            },
+            "on_false": {
+              "type": "minecraft:empty"
+            }
+          },
+          {
+            "type": "minecraft:condition",
+            "property": "minecraft:component",
+            "predicate": "minecraft:enchantments",
+            "value": [
+              {
+                "enchantments": "minecraft:mending"
+              }
+            ],
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/mendingfish"
+            },
+            "on_false": {
+              "type": "minecraft:empty"
+            }
+          }
+        ]
+      }
+    }
+  }

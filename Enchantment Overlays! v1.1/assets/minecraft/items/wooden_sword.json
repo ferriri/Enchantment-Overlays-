@@ -1,0 +1,164 @@
+{
+  "model": {
+    "type": "minecraft:composite",
+    "models": [
+      {
+        "type": "minecraft:model",
+        "model": "minecraft:item/wooden_sword"
+      },
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:looting"
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/lootingsword"
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:sweeping_edge"
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/sweepingsword"
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:knockback"
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/knockbacksword"
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:unbreaking"
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/unbreakingsword"
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:mending"
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/mendingsword"
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:bane_of_arthropods"
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/arthropodssword"
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:smite"
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/smitesword"
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:sharpness"
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/sharpnesssword"
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:fire_aspect"
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/fireaspectsword"
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      }
+    ]
+  }
+}

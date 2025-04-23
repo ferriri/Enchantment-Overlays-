@@ -1,0 +1,96 @@
+{
+    "model": {
+      "type": "minecraft:composite",
+      "models": [
+        {
+          "type": "minecraft:model",
+          "model": "minecraft:item/netherite_pickaxe"
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:fortune"
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/fortunepickaxe"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:silk_touch"
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/silktouchpickaxe"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:mending"
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/mendingpickaxe"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:unbreaking"
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/unbreakingpickaxe"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          }
+        },
+        {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:efficiency"
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/efficiencypickaxe"
+          },
+          "on_false": {
+            "type": "minecraft:empty"
+          }
+        }
+      ]
+    }
+  }
